@@ -1,4 +1,27 @@
 import streamlit as st
+
+# Custom CSS for a professional look
+st.markdown("""
+    <style>
+    .main { background-color: #f0f2f6; }
+    .stButton>button {
+        width: 100%;
+        border-radius: 10px;
+        height: 3em;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+    }
+    .prediction-box {
+        padding: 20px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
